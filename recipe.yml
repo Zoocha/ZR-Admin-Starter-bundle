@@ -1,0 +1,9 @@
+name: 'Zoocha Admin Theme Starter Recipe'
+description: 'This recipe provides some Gin admin theme and many other admin theme modules with baseline configuration'
+type: 'Feature'
+
+install:
+  - admin_toolbar
+  - environment_indicator
+  - gin
+  - gin_login

@@ -1,0 +1,19 @@
+{
+    "name": "zr/zr-admin-theme-starter-recipe",
+    "description": "Zoocha Admin Theme Starter Bundle",
+    "type": "drupal-custom-recipe",
+    "require": {
+        "php": ">=8.1",
+        "drupal/admin_toolbar": "^3.5",
+        "drupal/environment_indicator": "^4.0",
+        "drupal/gin": "^4.0",
+        "drupal/gin_login": "^2.1"
+    },
+    "authors": [
+        {
+            "name": "Arisha Salman",
+            "email": "webifyworld2020@gmail.com"
+        }
+    ],
+    "license": "GPL-2.0-or-later"
+}
