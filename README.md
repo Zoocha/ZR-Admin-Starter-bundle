@@ -1,6 +1,6 @@
-# Zoocha Admin Theme Recipe Installation Guide
+# ZR Admin Theme Recipe Installation Guide
 
-To install the Zoocha Admin Theme recipe, follow the steps below:
+To install the ZR Admin Theme recipe, follow the steps below:
 
 1. Open your terminal.
 2. Navigate to your project directory. 
@@ -14,9 +14,9 @@ To install the Zoocha Admin Theme recipe, follow the steps below:
     ddev drush recipe recipes/custom/zr-admin-theme-starter-recipe
     ```
 
-This command will execute the Zoocha Admin Theme recipe installation.
+This command will execute the ZR Admin Theme recipe installation.
 
-These commands will install the necessary modules for the Zoocha Admin Theme.
+These commands will install the necessary modules for the ZR Admin Theme.
 
 Additionally, you should add the environment indicator settings in `settings.php` based on the environment:
 
@@ -47,4 +47,4 @@ To ensure the environment indicator looks consistent, add the following CSS to y
     border-radius: 5px;
 }
 ```
-![Zoocha Environment Indicator CSS](./images/environment-indicator.png)
+![ZR Environment Indicator CSS](./images/environment-indicator.png)
