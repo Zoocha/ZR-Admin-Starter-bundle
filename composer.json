@@ -6,8 +6,7 @@
         "php": ">=8.1",
         "drupal/admin_toolbar": "^3.5",
         "drupal/environment_indicator": "^4.0",
-        "drupal/gin": "^4.0",
-        "drupal/gin_login": "^2.1"
+        "drupal/gin": "^4.0"
     },
     "authors": [
         {
