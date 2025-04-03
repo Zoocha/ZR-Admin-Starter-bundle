@@ -6,3 +6,9 @@ install:
   - admin_toolbar
   - environment_indicator
   - gin
+config:
+  actions:
+    system.theme:
+      simple_config_update:
+        default: gin
+        admin: gin
