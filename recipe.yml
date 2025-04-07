@@ -1,13 +1,61 @@
 name: 'Zoocha Admin Theme Starter Recipe'
 description: 'This recipe provides some Gin admin theme and many other admin theme modules with baseline configuration'
-type: 'Feature'
+type: 'Site'
 
 install:
   - admin_toolbar
+  - admin_toolbar_search
   - environment_indicator
   - gin
 config:
+  # Allow config import to continue if config already exists.
+  strict: false
+  import:
+    admin_toolbar: '*'
+    admin_toolbar_search: '*'
+    admin_toolbar_tools: '*'
+    gin:
+      - gin.settings
+      - block.block.gin_breadcrumbs
+      - block.block.gin_content
+      - block.block.gin_help
+      - block.block.gin_local_actions
+      - block.block.gin_messages
+      - block.block.gin_page_title
+      - block.block.gin_primary_local_tasks
   actions:
+    # Set and unset Gin blocks.
+    block.block.gin_search_form_wide:
+      setStatus: false
+    block.block.gin_search_form_narrow:
+      setStatus: false
+    block.block.gin_powered:
+      setStatus: false
+    block.block.gin_account_menu:
+      setStatus: false
+    block.block.gin_main_menu:
+      setStatus: false
+    block.block.gin_syndicate:
+      setStatus: false
+    block.block.gin_site_branding:
+      setStatus: false
+    block.block.gin_primary_admin_actions:
+      setStatus: false
+    block.block.gin_help:
+      setRegion: help
+      setWeight: -10
+    block.block.gin_local_actions:
+      setRegion: content
+      setWeight: -10
+    block.block.gin_page_title:
+      setRegion: header
+      setWeight: -10
+    block.block.gin_primary_local_tasks:
+      setRegion: header
+      setWeight: -5
+    block.block.gin_secondary_local_tasks:
+      setRegion: pre_content
+      setWeight: -5
     system.theme:
       simple_config_update:
         default: gin
