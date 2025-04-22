@@ -2,34 +2,31 @@
 
 To install the ZR Admin Theme recipe, follow the steps below:
 
-1. Open your terminal.
-2. Navigate to your project directory. 
-3. Add the below in the Drupal Root's composer.json installer-paths
-```sh
-"web/recipes/custom/{$name}": ["type:drupal-recipe"]
-```
-4. Run the following command:
+1. Ensure the below has been added to the `composer.json` **installer-paths**:
+    ```sh
+    "web/recipes/custom/{$name}": ["type:drupal-recipe"]
+    ```
+2. Run the following command (within the `/web` directory):
 
     ```sh
     ddev drush recipe recipes/custom/zr-admin-theme-starter-recipe
     ```
 
-This command will execute the ZR Admin Theme recipe installation.
+The above command will execute the ZR Admin Theme recipe installation and install the necessary modules.
 
-These commands will install the necessary modules for the ZR Admin Theme.
-
-Additionally, you should add the environment indicator settings in `settings.php` based on the environment:
+Additionally, add the environment indicator settings in `settings.php` based on the environment:
 
 ```php
- $config['environment_indicator.indicator']['name'] = 'Dev';
- $config['environment_indicator.indicator']['bg_color'] = '#d8d887';
+$config['environment_indicator.indicator']['name'] = 'Dev';
+$config['environment_indicator.indicator']['bg_color'] = '#d8d887';
 
- $config['environment_indicator.indicator']['name'] = 'Stage';
- $config['environment_indicator.indicator']['bg_color'] = '#6eb6cb';
+$config['environment_indicator.indicator']['name'] = 'Stage';
+$config['environment_indicator.indicator']['bg_color'] = '#6eb6cb';
 
- $config['environment_indicator.indicator']['name'] = 'Live';
- $config['environment_indicator.indicator']['bg_color'] = '#e45656';
+$config['environment_indicator.indicator']['name'] = 'Live';
+$config['environment_indicator.indicator']['bg_color'] = '#e45656';
 ```
+
 To ensure the environment indicator looks consistent, add the following CSS to your theme's custom CSS file:
 
 ```css
@@ -47,4 +44,5 @@ To ensure the environment indicator looks consistent, add the following CSS to y
     border-radius: 5px;
 }
 ```
+
 ![ZR Environment Indicator CSS](./images/environment-indicator.png)
